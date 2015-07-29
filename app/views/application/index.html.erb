@@ -1,0 +1,16 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Movies</h1>
+      </div>
+    </div>
+    
+<% @mov.each do |mov| %>
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <a href= "/mov/<%= mov.id %>">
+          <img src="<%= mov.url %>">
+        </a>
+      </div>
+    </div>
+<% end %>

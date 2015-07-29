@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://ruby-on-rails-114433.nitrousapp.com:3000/mov">Movies</a>
+    </div>
+
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+
+      <div class="thumbnail">
+        <img src= "<%= @mov.url %>" alt="...">
+      </div>
+
+    </div>
+  </div>
+</div>
+<br></br>
+       <br> <%= @mov.title2 %></br>
+
+     <br> <%= @mov.detail %></br>
+<br></br>
+<br></br>
+<a href = "http://ruby-on-rails-114433.nitrousapp.com:3000/new_mov"> Add New Movie <a>
+  <br></br>
+<a href = "http://ruby-on-rails-114433.nitrousapp.com:3000/mov/<%= @mov.id %>/edit"> Update This Movie <a>
+  <br></br>
+<a href = "http://ruby-on-rails-114433.nitrousapp.com:3000/mov/<%= @mov.id %>/destroy"> Destroy This Movie <a>
